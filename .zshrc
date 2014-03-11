@@ -45,6 +45,7 @@ source $ZSH/oh-my-zsh.sh
 alias raspi="ssh raspi -t tmux a"
 alias utu="ssh utu -t tmux a"
 alias skin="ssh skin -t tmux a"
+alias iki="ssh iki -t tmux a"
 
 alias howto="~/code/howto/howto"
 alias t='python ~/code/t/t.py --task-dir ~/Dropbox/tasks --list tasks'
