@@ -6,6 +6,8 @@ set hlsearch " hilighted search on (:nohlsearch turns off)
 set number " line numbers
 set t_Co=256
 set ignorecase
+set smartcase
+set incsearch " Highlight as you type..
 
 " Higlight unwanted space
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
