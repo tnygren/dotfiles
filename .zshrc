@@ -48,6 +48,6 @@ alias skin="ssh skin -t tmux a"
 alias iki="ssh iki -t tmux a"
 
 alias howto="~/code/howto/howto"
-alias t='python ~/code/t/t.py --task-dir ~/annex/tasks --list tasks'
+alias t='python ~/code/t/t.py --task-dir ~/.tasks --list tasks'
 alias saa="~/code/weather/w.sh"
 alias cal="ncal -b" # Week start on Monday
