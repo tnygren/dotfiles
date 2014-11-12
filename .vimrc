@@ -23,31 +23,36 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
-" My Bundles here:
+Plugin 'gmarik/vundle'
+" My Plugins here:
 "
 " original repos on github
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
-Bundle "flazz/vim-colorschemes"
-Bundle "rizzatti/funcoo.vim"
-Bundle "rizzatti/dash.vim"
-Bundle "vim-scripts/loremipsum"
-Bundle "scrooloose/syntastic"
-Bundle "scrooloose/nerdtree"
-Bundle "scrooloose/nerdcommenter"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'rizzatti/funcoo.vim'
+Plugin 'rizzatti/dash.vim'
+Plugin 'vim-scripts/loremipsum'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 "" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
+"Plugin 'L9'
+"Plugin 'FuzzyFinder'
 "" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
+"Plugin 'git://git.wincent.com/command-t.git'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " For some reason these should be kept in the last part of the file
 syntax on
