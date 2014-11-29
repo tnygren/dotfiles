@@ -8,6 +8,7 @@ set t_Co=256
 set ignorecase
 set smartcase
 set incsearch " Highlight as you type..
+let g:LatexBox_Folding=1
 
 " Higlight unwanted space
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -17,6 +18,7 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " leader is normally \ but lets change that to comma ,
 " After this Dash search ,d in normal mode
 :let mapleader = ","
+:let maplocalleader = ","
 :nmap <silent> <leader>d <Plug>DashSearch
 
 " vundle things
@@ -24,7 +26,7 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
 " let Vundle manage Vundle
@@ -44,6 +46,7 @@ Plugin 'vim-scripts/loremipsum'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
 "" vim-scripts repos
 "Plugin 'L9'
 "Plugin 'FuzzyFinder'
