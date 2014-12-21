@@ -1,0 +1,15 @@
+" disable vimperator on raspberrypi/ttrss
+autocmd LocationChange .*                             js modes.passAllKeys = false
+autocmd LocationChange raspberrypi/ttrss              js modes.passAllKeys = true
+
+" Set font size of cmd line
+hi CmdLine -append font-size:14px
+
+" Set font size of completion items
+hi CompItem -append font-size:14px
+
+" Set font size of completion items descriptions
+hi CompDesc -append font-size:14px
+
+" Set font size of hints (link numbers)
+highlight Hint font-size:100%;color:white;background-color:red;padding:2px;
