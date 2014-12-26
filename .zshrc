@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="candy"
+ZSH_THEME="crunch"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -51,4 +51,4 @@ alias kapsi="ssh kapsi -t tmux a"
 alias howto="~/code/howto/howto"
 alias t='python ~/code/t/t.py --task-dir ~/.tasks --list tasks'
 alias saa="~/code/weather/w.sh"
-alias cal="ncal -b" # Week start on Monday
+#alias cal="ncal -b" # Week start on Monday
