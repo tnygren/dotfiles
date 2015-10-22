@@ -47,6 +47,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'vim-scripts/Vimchant'
 "" vim-scripts repos
 "Plugin 'L9'
 "Plugin 'FuzzyFinder'
