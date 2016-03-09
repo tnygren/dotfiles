@@ -48,7 +48,7 @@ alias skin="ssh skin -t tmux a"
 alias iki="ssh iki -t tmux a"
 alias kapsi="ssh kapsi -t tmux a"
 
-alias howto="~/code/howto/howto"
+alias howto="~/storage/gitOpiskelu/wikidata/howto/howto"
 alias t='python ~/code/t/t.py --task-dir ~/.tasks --list tasks'
 alias saa="~/code/weather/w.sh"
 #alias cal="ncal -b" # Week start on Monday
