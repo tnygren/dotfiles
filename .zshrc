@@ -50,7 +50,7 @@ alias kapsi="ssh kapsi -t tmux a"
 
 alias howto="~/storage/gitOpiskelu/wikidata/howto/howto"
 alias saa="~/code/weather/w.sh"
-#alias cal="ncal -b" # Week start on Monday
+alias cal="ncal -C"
 
 alias t=task
 alias in='task add +in'
