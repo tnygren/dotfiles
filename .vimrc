@@ -14,6 +14,9 @@ let g:LatexBox_Folding=1
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
+" Highlight *.page files as markdown
+au BufRead,BufNewFile *.page set filetype=markdown
+
 " Dash keybinding
 " leader is normally \ but lets change that to comma ,
 " After this Dash search ,d in normal mode
