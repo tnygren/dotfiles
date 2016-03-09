@@ -2,7 +2,7 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set hlsearch " hilighted search on (:nohlsearch turns off)
+set hlsearch " highlighted search on (:nohlsearch turns off)
 set number " line numbers
 set t_Co=256
 set ignorecase
@@ -10,7 +10,7 @@ set smartcase
 set incsearch " Highlight as you type..
 let g:LatexBox_Folding=1
 
-" Higlight unwanted space
+" Highlight unwanted space
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
