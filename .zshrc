@@ -49,6 +49,15 @@ alias iki="ssh iki -t tmux a"
 alias kapsi="ssh kapsi -t tmux a"
 
 alias howto="~/storage/gitOpiskelu/wikidata/howto/howto"
-alias t='python ~/code/t/t.py --task-dir ~/.tasks --list tasks'
 alias saa="~/code/weather/w.sh"
 #alias cal="ncal -b" # Week start on Monday
+
+alias t=task
+alias in='task add +in'
+alias tick=tickle
+alias think='tickle +1d'
+tickle () {
+    deadline=$1
+    shift
+    in +tickle wait:$deadline $@
+}
