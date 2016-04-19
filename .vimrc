@@ -17,6 +17,9 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " Highlight *.page files as markdown
 au BufRead,BufNewFile *.page set filetype=markdown
 
+" Clear last search highlighting when you press <esc>
+nnoremap <esc> :noh<return><esc>
+
 " Dash keybinding
 " leader is normally \ but lets change that to comma ,
 " After this Dash search ,d in normal mode
