@@ -43,6 +43,7 @@ source $ZSH/oh-my-zsh.sh
 # figure out how to add "ssh -t" option to .ssh/config.
 # For more info, check .ssh/config and man ssh_config
 alias raspi="ssh raspi -t tmux a"
+alias nauha="ssh nauha -t tmux a"
 alias utu="ssh utu -t tmux a"
 alias skin="ssh skin -t tmux a"
 alias iki="ssh iki -t tmux a"
