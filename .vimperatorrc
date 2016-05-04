@@ -1,6 +1,6 @@
 " disable vimperator on raspberrypi/ttrss
 autocmd LocationChange .*                             js modes.passAllKeys = false
-autocmd LocationChange raspberrypi/ttrss              js modes.passAllKeys = true
+autocmd LocationChange tnygren.kapsi.fi/t/t           js modes.passAllKeys = true
 
 " Set font size of cmd line
 hi CmdLine -append font-size:14px
