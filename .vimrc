@@ -17,6 +17,10 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " Highlight *.page files as markdown
 au BufRead,BufNewFile *.page set filetype=markdown
 
+" Character being highlighted when the line goes over 80-character maxium
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
 " Clear last search highlighting when you press <esc>
 nnoremap <esc> :noh<return><esc>
 
