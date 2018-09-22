@@ -62,3 +62,10 @@ tickle () {
     shift
     in +tickle wait:$deadline $@
 }
+
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_7_HOME=$(/usr/libexec/java_home -v10.0)
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java10='export JAVA_HOME=$JAVA_10_HOME'
+#default java8
+export JAVA_HOME=$JAVA_10_HOME
